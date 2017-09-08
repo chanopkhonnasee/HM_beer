@@ -1,0 +1,33 @@
+<html>
+<head>
+	<style>
+		#result {
+		border: 5px solid black; 
+		}
+		button {
+		background-color : black;
+		color : white;
+		border : 5px ;
+		}
+	</style>
+	<script src='build/main.bundle.js'></script>
+	<script src='js/index.js'></script>
+	
+</head>
+<body onload="getBeersAPI()">
+	
+	<div align="center">
+	<h1>
+	Search Beers
+	</h1>
+	</br>
+	<input type="text" id="name" placeholder="name" />
+	<input type="text" id="yeast" placeholder="yeast" />
+	<button onclick="getBeerAPIByName(getElementById('name').value,getElementById('yeast').value)">Search</button>
+	</div>
+	
+	</br></br></br>
+	<div id="result" align="center">
+	</div>
+</body>
+</html>
