@@ -14,7 +14,7 @@ getBeersAPI = function getBeersAPI() {
 			+ response[i].ingredients.yeast + "<br> <b>First Brewed : </b>" 
 			+ response[i].first_brewed + "<br> <b>Description : </b>" 
 			+ response[i].description + "<br>" + "<image src =" 
-			+ response[i].image_url + "/><hr>";
+			+ response[i].image_url + " width="30%" height="30%"/><hr>";
         }
         document.getElementById('result').innerHTML = result;
     });
@@ -41,7 +41,7 @@ function getBeerAPIByName(name,yeast) {
 			+ response[i].ingredients.yeast + "<br> <b>First Brewed : </b>" 
 			+ response[i].first_brewed + "<br> <b>Description : </b>" 
 			+ response[i].description + "<br>" + "<image src =" 
-			+ response[i].image_url + "/><hr>";
+			+ response[i].image_url + "width="30%" height="30% /><hr>";
         }
 		if((name == "" & yeast =="") || response == "")
 			{document.getElementById('result').innerHTML = "Not result";}
